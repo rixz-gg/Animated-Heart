@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Heart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <div class="heart-container" id="heart-container"></div>
+
+    <div class="mobile-toggle" id="mobile-toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <div class="controls" id="controls">
+        <div class="control-group">
+            <label for="text-input">Mensaje del corazón:</label>
+            <input type="text" id="text-input" value="Te Amo" />
+        </div>
+
+        <div class="control-group">
+            <label for="points-slider">Número de puntos:</label>
+            <input type="range" id="points-slider" min="20" max="200" value="60" />
+            <span id="points-value">60</span>
+        </div>
+
+        <div class="control-group">
+            <label for="speed-slider">Velocidad:</label>
+            <input type="range" id="speed-slider" min="1" max="10" value="3" />
+            <span id="speed-value">3</span>
+        </div>
+
+        <div class="control-group">
+            <label for="size-slider">Tamaño:</label>
+            <input type="range" id="size-slider" min="5" max="30" value="12" />
+            <span id="size-value">12px</span>
+        </div>
+
+        <div class="control-group">
+            <label for="primary-color">Color principal:</label>
+            <input type="color" id="primary-color" value="#ff1493" />
+        </div>
+
+        <div class="control-group">
+            <label for="glow-color">Color brillo:</label>
+            <input type="color" id="glow-color" value="#ff00ff" />
+        </div>
+
+        <div class="control-group">
+            <label for="rotation-slider">Rotación de texto:</label>
+            <input type="range" id="rotation-slider" min="0" max="360" value="0" />
+            <span id="rotation-value">0°</span>
+        </div>
+
+        <div class="control-group">
+            <label for="effect-select">Efecto visual:</label>
+            <select id="effect-select">
+                <option value="normal">Normal</option>
+                <option value="pulse">Pulsante</option>
+                <option value="rainbow">Arcoíris</option>
+                <option value="wave">Ondulante</option>
+                <option value="explode">Explosión</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
